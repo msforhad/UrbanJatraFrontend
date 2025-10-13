@@ -26,7 +26,7 @@ const cards =[
 
 function HeroSection() {
   return (
-    <section className='mx-15 md:mx-10 lg:mx-20 2xl:mx-40'>
+    <section className='mx-5 md:mx-10 lg:mx-20 2xl:mx-40'>
       <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 xl:gap-5 '>
         {
           cards.map((card)=>(
@@ -34,7 +34,7 @@ function HeroSection() {
               <div>
                 <img className='rounded drop-shadow-md' src={card.image} alt="" />
               </div>
-              <div className='absolute bottom-30 md:bottom-20 left-50 md:left-45 xl:left-42'>
+              <div className='absolute top-0 w-full h-full flex flex-col justify-center items-center'>
                 <p className='roboto text-xs md:text-sm lg:text-base 2xl:text-md text-red-500'>{card.trend}</p>
                 <p className='poppins text-base md:text-md lg:text-xl 2xl:text-2xl font-semibold'>{card.title}</p>
                 <Link className='poppins text-xs md:text-sm lg:text-base 2xl:text-md underline' to="/">Discover Me</Link>
