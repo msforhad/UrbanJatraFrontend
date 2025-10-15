@@ -4,6 +4,7 @@ import { current } from '@reduxjs/toolkit'
 const initialState = {
   mode:'light',
   menu:'open-menu',
+  cart:'open-cart',
 }
 
 const themeSlice = createSlice({
@@ -12,16 +13,17 @@ const themeSlice = createSlice({
   reducers:{
     toggleMode:(state)=>{
       state.mode= state.mode === 'light'?'dark':'light';
-      console.log(current(state))
     },
     menuBtn:(state)=>{
       state.menu= state.menu === 'open-menu'?'closed-menu':'open-menu';
-      console.log(current(state))
+    },
+    cartBtn:(state)=>{
+      state.cart=state.cart==='open-cart'?'closed-cart':'open-cart'
     }
 
   }
 
 })
 
-export const{toggleMode,menuBtn}=themeSlice.actions
+export const{toggleMode,menuBtn,cartBtn}=themeSlice.actions
 export default themeSlice.reducer

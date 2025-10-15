@@ -19,7 +19,7 @@ function Search() {
         <div className="mx-5 md:mx-10 lg:mx-20 2xl:mx-40 py-20">
           <section className="flex flex-col items-center gap-3 ">
             <h2 className="capitalize poppins text-2xl lg:text-3xl 2xl:text-4xl font-semibold">Search Products</h2>
-            <p className="roboto text-xs md:text-sm lg:text-base 2xl:text-md text-gray-500 px-20 md:px-40 xl:px-70 text-center">
+            <p className="roboto text-xs md:text-sm lg:text-base 2xl:text-md text-gray-500 md:px-40 xl:px-70 text-center">
               {" "}
               Browse a diverse range of categories, from chic dresses to
               versatile accessories. Elevate your style today!
@@ -29,17 +29,17 @@ function Search() {
       </div>
 
       <section className="mx-5 md:mx-10 lg:mx-20 2xl:mx-40">
-        <div className="w-full my-12 flex flex-col md:flex-row items-center justify-center gap-1.5 ">
+        <div className="w-full my-12 flex items-center justify-center gap-1.5 ">
           <input
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search for products..."
-            className="w-full max-w-4xl p-[10px] border-1 rounded color-primary"
+            className="w-full md:w-2/3 p-[5px] md:p-[8px] border-1 rounded color-primary"
           />
           <button
             onClick={handleSearch}
-            className="poppins md:w-auto py-[11px] px-10 bg-red-500 text-white 
+            className="poppins md:w-auto py-[6px] md:py-[9px] px-3 md:px-5 bg-red-500 text-white 
             rounded"
           >
             Search

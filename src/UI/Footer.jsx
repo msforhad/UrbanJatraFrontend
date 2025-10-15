@@ -20,7 +20,7 @@ function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4">
           {/* contact info section */}
           <div className="flex flex-col justify-start gap-2">
-            <p className="poppins color-primary text-lg lg:text-xl font-semibold">
+            <p className="poppins color-primary text-base lg:text-md font-semibold">
               CONTACT INFO
             </p>
             <p className="roboto text-xs lg:text-base color-secondary flex gap-1.5 items-center">
@@ -39,7 +39,7 @@ function Footer() {
 
           {/* company section */}
           <div className="flex flex-col justify-start gap-2">
-            <p className="poppins color-primary text-lg lg:text-xl font-semibold">
+            <p className="poppins color-primary text-base lg:text-md font-semibold">
               COMPANY
             </p>
             <Link
@@ -76,7 +76,7 @@ function Footer() {
 
           {/* useful link section */}
           <div className="flex flex-col justify-start gap-2">
-            <p className="poppins color-primary text-lg lg:text-xl font-semibold">
+            <p className="poppins color-primary text-base lg:text-md font-semibold">
               USEFUL LINK
             </p>
             <Link
@@ -113,7 +113,7 @@ function Footer() {
 
           {/* INSTAGRAM section */}
           <div className="flex flex-col justify-start gap-2">
-            <p className="poppins color-primary text-lg lg:text-xl font-semibold">
+            <p className="poppins color-primary text-base lg:text-md font-semibold">
               INSTAGRAM
             </p>
 

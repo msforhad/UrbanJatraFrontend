@@ -98,12 +98,23 @@
 }
 
 /* header section */
-.sliding-on {
+.menu-on {
   left: 0;
   transition: all 0.3s ease-in-out;
 }
 
-.sliding-off {
+.menu-off {
+  left: -100%;
+  transition: all 0.3s ease-in-out;
+}
+
+/* cart section sliding */
+.cart-on {
+  left: 0%;
+  transition: all 0.3s ease-in-out;
+}
+
+.cart-off {
   left: -100%;
   transition: all 0.3s ease-in-out;
 }
