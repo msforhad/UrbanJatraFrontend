@@ -79,8 +79,9 @@
   --card-shadow: hsla(0, 0%, 0%, 0.1);
   --input-bg: hsl(0, 0%, 93%);
   --shadow-1: 10px 10px 40px var(--card-shadow);
-  --border-primary: hsl(0, 0%, 80%);
+  --border-primary: hsl(0, 0%, 90%);
   --border-secondary: hsl(0, 0%, 65%);
+  /* 90/65 */
 
 }
 
@@ -92,8 +93,8 @@
   --card-shadow: hsla(0, 0%, 0%, 0.4);
   --input-bg: hsl(0, 0%, 16%);
   --shadow-1: 10px 10px 40px var(--card-shadow);
-  --border-primary: hsl(0, 0%, 20%);
-  --border-secondary: hsl(0, 0%, 55%);
+  --border-primary: hsl(0, 0%, 25%);
+  --border-secondary: hsl(0, 0%, 35%);
 
 }
 

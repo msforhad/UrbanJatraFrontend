@@ -188,7 +188,7 @@ function Navbar() {
                 </span>
               </p>
 
-              <p>
+              <p className='cursor-pointer'>
                 <ImCross
                   className="text-sm lg:text-base"
                   onClick={() => dispatch(cartBtn())}
@@ -223,18 +223,18 @@ function Navbar() {
                           onClick={() =>
                             handleQuantity("increment", product.id)
                           }
-                          className="px-1.5 border-r border-secondary text-sm lg:text-base 2xl:text-md font-semibold bg-primary cursor-pointer"
+                          className="px-1.5 border-r border-secondary text-sm lg:text-base 2xl:text-md font-semibold bg-primary cursor-pointer color-primary"
                         >
                           +
                         </button>
-                        <p className="px-2 text-xs md:text-sm lg:text-base 2xl:text-md font-semibold">
+                        <p className="px-2 text-xs md:text-sm lg:text-base 2xl:text-md font-semibold color-primary">
                           {product.quantity}
                         </p>
                         <button
                           onClick={() =>
                             handleQuantity("decrement", product.id)
                           }
-                          className="px-1.5 border-l border-secondary text-sm lg:text-base 2xl:text-md font-semibold bg-primary cursor-pointer"
+                          className="px-1.5 border-l border-secondary text-sm lg:text-base 2xl:text-md font-semibold bg-primary cursor-pointer color-primary "
                         >
                           -
                         </button>
@@ -253,7 +253,7 @@ function Navbar() {
             </div>
           </div>
 
-          <div className="flex flex-col justify-center items-center border-t-1 border-secondary mb-1.5 mx-1.5 ">
+          <div className="flex flex-col justify-center items-center border-t-1 border-primary mb-1.5 mx-1.5 ">
             <p className="color-primary pt-1.5 text-sm poppins color-primary flex justify-evenly w-full">
               <span>Total Price($)</span>
               <span>{totalPrice.toFixed(2)}</span>
